@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2-mos Tracker</title>
+    <link rel="icon" type="image/png" href="/img/title_logo.PNG" id="imgTabLogo">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="/img/title_logo.PNG" width="100" height="100" id="TitleLogo">
+                <a class="navbar-brand" href="/">&#9729;CO2-mos Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 " href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-4" id="dropDownSchriftkultur" role="button" data-bs-toggle="dropdown" 
+                                aria-expanded="false">Schriftkultur</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id="button1">Von links &#8594; nach rechts</a></li>
+                                <li><a class="dropdown-item" id="button2">Nach links &#8592; von rechts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+      
+    <main>
+        <nav id="inhaltsverzeichnis">
+            <ul id="listeInhaltsverzeichnis">
+                <h5>Inhaltsverzeichnis</h5>
+                <a class="verzeichnisItem" href="index.html#vorwort">Vorwort</a>
+                <a class="verzeichnisItem" href="index.html#artikelNachhaltigkeit">Was bedeutet 'Nachhaltigkeit'?</a>
+                <a class="verzeichnisItem" href="index.html#artikelEmissionen">Warum sind Emissionen so gefährlich?</a>
+                <a class="verzeichnisItem" href="index.html#tabelleEmissionen">Wer emittiert wie viel?</a>
+                <a class="verzeichnisItem" href="index.html#artikelKlimaKampf">Kampf gegen den Klimawandel!</a>
+                <a class="verzeichnisItem" href="index.html#spende">Spenden und helfen!</a>
+            </ul>
+        </nav>
+        <div id="contentSpeicher">
+            <!-- Abschnitt: vorwort-->
+            <div class="card" id="vorwort">
+                <img src="/img/vorwort.PNG" class="card-img-top" id="imgVorwort">
+                <div class="card-body">
+                    <h1 class="card-title">Vorwort</h1>
+                    <p class="card-text"><h4>Hallo und herzlich Willkommen auf der Website von "CO2-mos Tracker"!</h4>
+                        Hier findest Du interessante, hilfreiche und spannende News zu dem Thema Nachhaltigkeit.</br>
+                        Zunächst erwarten Dich grundlegende Informationen, warum Nachhaltigkeit derart wichtig ist und aus welchem Grund der 
+                        Ausstoß von Emissionen gefährlich für uns und die Erde ist.
+                        Um ein Gespühr zu bekommen, welche Unternehmen rund um die Welt wieviel Tonnen CO2 (!! fiktiv !!) ausstoßen, habe ich Dir eine interaktive Tabelle bereitgestellt, 
+                        mit welcher Du nicht nur alphabetisch nach Unternehmen oder Land, sondern auch chronologisch nach "Emissionen (in T)" sortieren kannst.
+                        Über eine zusäzuliche Suchfunktion steht es dir ergänzend frei, beliebig nach bestimmten Ländern oder Unternehmen zu selektieren.
+                        Probier es gerne mal aus!</p>Klick dazu einfach <a href="#tabelleEmissionen"> hier!</a></p>
+                        Aber ich möchte nicht nur schlechte Laune verbreiten. Es besteht nach wie vor Mut zur Hoffnung! Glücklicherweise gibt es genügend Unternehmen, 
+                        die sich für den Kampf gegen den Klimawandel einsetzen. Sie haben wichtige Probleme erkannt und investieren viel Zeit und noch mehr Energie für 
+                        das Pflanzen von Bäumen und somit für die (Wieder-)Aufforstung von Wäldern. Ihr Einsatz ist sehr wertvoll für unsere Zukunft. 
+                        Aber auch Du kannst daran teilhaben - Bereits mit einer kleinen Spende an ausgewählte Organisationen kannst Du einen großen Beitrag 
+                        an einer nachhaltigeren und besseren Welt sorgen. </p>
+                        Wenn Du es nicht abwarten kannst, klick <a href="#spende">hier</a></p> und es erwartet Dich (auf einem großen Bildschirm) ein Spenden-Banner - oder
+                        (auf einem "kleineren" Bildschirm) 3 Spendenboxen. Wenn Dir ein Unternehmen zusagt, kommst Du mit einem Klick direkt zur Spendenübersicht der
+                        jeweiligen Organisation.</p>
+                        Und wenn Du nicht für Dich und Deine Zukunft spenden möchtest.. Mache es für Deine Kinder, Enkelkinder, Familie, Freunde oder kurz um:</p>
+                        <h5>Mach es für all die, die Dir am Herzen liegen (werden)!</h5></p>
+                </div>
+            </div>
+
+            <!-- Abschnitt: wasIstNachhaltig-->
+            <div class="card" id="artikelNachhaltigkeit">
+                <img src="/img/artikel_wasIstNachhaltig_16-9_2.PNG" class="card-img-top" id="imgWasIstNachhaltig">
+                <div class="card-body">
+                    <h1 class="card-title">Was bedeutet 'Nachhaltigkeit'?</h1>
+                    <p class="card-text">Am ehesten kann der Begriff mit zukunftsfähig übersetzt werden. 
+                    Es geht darum, bei allen Handlungen und Entscheidungen auf die Folgen zu achten. 
+                    Ziel ist, dass alle Menschen heute und in Zukunft gut leben können. Es geht also nicht nur um Umweltschutz, sondern im Mittelpunkt steht der Mensch.</p>
+                    <a href="https://www.politische-bildung.nrw.de/wir-partner/themen/nachhaltig-digital/hintergrund#c4065" class="btn btn-warning">Hier gehts zum Artikel</a>
+                </div>
+            </div>
+        
+            <!-- Abschnitt: gefährliche Emissionen-->    
+            <div class="card" id="artikelEmissionen">
+                <img src="/img/artikel_gefährlicheEmissionen_16-9.PNG" class="card-img-top" id="imgGefährlicheEmissionen">
+                <div class="card-body">
+                    <h1 class="card-title">Warum sind Emissionen so gefährlich?</h1>
+                    <p class="card-text">Haupttriebfeder des Klimawandels ist der Treibhauseffekt. Einige in der Erdatmosphäre vorhandene Gase wirken ungefähr wie das Glas eines Gewächshauses: 
+                    Sie lassen Sonnenwärme zwar herein, verhindern aber ihre Abstrahlung zurück in den Weltraum und führen zur Erderwärmung.
+                    Viele dieser Treibhausgase sind natürliche Bestandteile der Erdatmosphäre; infolge menschlicher Tätigkeiten ist jedoch die Konzentration einiger Gase stark angestiegen. 
+                    Das gilt insbesondere für:</p>
+                    Kohlendioxid (CO2)</br>
+                    Methan</br>
+                    Distickstoffoxid</br>
+                    Fluorierte Gase</p>
+                    Durch menschliche Tätigkeiten entstehendes CO2 trägt am stärksten zur Erderwärmung bei. 
+                    Bis 2020 war die CO2-Konzentration in der Atmosphäre auf einen Wert von 48 % über dem vorindustriellen Niveau (vor 1750) gestiegen.
+                    Andere Treibhausgase werden durch menschliche Tätigkeiten in geringeren Mengen emittiert. 
+                    Methan ist ein stärkeres Treibhausgas als CO2, hat aber eine kürzere Lebensdauer in der Atmosphäre. 
+                    Distickstoffoxid ist wie CO2 ein langlebiges Treibhausgas, das sich in der Atmosphäre über Jahrzehnte und Jahrhunderte anreichert. 
+                    Nicht-Treibhausgase, einschließlich Aerosole wie Ruß, haben unterschiedliche Erwärmungs- und Abkühlungseffekte und sind unter anderem mit schlechter Luftqualität verbunden.
+                    Natürliche Ursachen wie etwa Veränderungen der Sonneneinstrahlung oder vulkanische Aktivität haben zwischen 1890 und 2010 Schätzungen 
+                    zufolge um weniger als ± 0,1 °C zur Gesamterwärmung beigetragen.</p>
+                    <a href="https://climate.ec.europa.eu/climate-change/causes-climate-change_de#treibhausgase" class="btn btn-warning">Hier gehts zum Artikel</a>
+                </div>
+            </div>
+
+            <!-- Abschnitt: emissionenTabelle-->    
+            <div class="card" id="tabelleEmissionen">
+                <img src="/img/artikel_emissionenTabelle_16-9.PNG" class="card-img-top" img="imgEmissionenTabelle">
+                <div class="card-body">
+                    <h1 class="card-title">Wer emittiert wie viel?</h1>
+                    <p class="card-text">Wie bereits im Vorwort erwähnt, erwartet Dich hier eine interaktive Liste von CO2-Emissionen weltweit agierenden Unternehmen*. Diese sind mit ihrem, 
+                        aus dem jeweiligen Handelsregister entnommenen Namen, sowie dem Firmenhauptsitz aufgelistet. </br> Aufgrund ihrer ausschließlich auf ihren wirtschaftlichen Erfolg ausgerichteten
+                        Geschäftsführung, ist ihnen jedes Mittel recht, diesen zu erreichen. Zum Leidwesen der Umwelt und somit unserer Zukunft. Mit dieser Liste möchten wir niemanden an den Pranger stellen, 
+                        sondern lediglich informieren. </p>
+                        <h6>*Wichtig - Fiktive Darstellung: Die vorliegenden Unternehmens-Daten sind rein fiktiv und dienen lediglich zur Veranschaulichung der Funktionsweise dieser Tabelle!</h6></p
+                        >
+                    <input id="search-input" placeholder="Suchen nach ..."></p>
+                    <table class="table table-striped table-hover">
+                        <tr>
+                            <th data-column="name" data-order="desc">Unternehmen &#8645;</th>
+                            <th data-column="land" data-order="desc">Land &#8645;</th>
+                            <th data-column="höheDerEmission" data-order="desc">Emissionen (in T) &#8645;</th>               
+                        </tr>
+                        <tbody id="emissionsTabelle"></tbody>        
+                    </table>
+                </div>   
+            </div>
+
+            <!-- Abschnitt: klimaKampf-->
+            <div class="card" id="artikelKlimaKampf">
+                <img src="/img/artikel_klimaKampf_16-9.PNG" class="card-img-top" id="imgKlimaKampf">
+                <div class="card-body" >
+                    <h1 class="card-title">Kampf gegen den Klimawandel!</h1>
+                    <p class="card-text">Da jede ausgestoßene Tonne CO2 zur Erderwärmung beiträgt, hilft jede Emissionsreduktion, die Erderwärmung einzudämmen. 
+                    Um die Erderwärmung komplett zu stoppen, müssen wir weltweit CO2-neutral werden. 
+                    Darüber hinaus kann die Verringerung anderer Treibhausgasemissionen wie Methan zur Verlangsamung der Erderwärmung beitragen – insbesondere auf kurzfristige Sicht.
+                    Die Folgen des Klimawandels sind äußerst schwerwiegend und betreffen viele Aspekte unseres Lebens. 
+                    Der Kampf gegen den Klimawandel und die Anpassung an die Erderwärmung sind oberste Prioritäten der EU. Wir müssen das Klima schützen – und zwar jetzt. </p>
+                    <a href="https://climate.ec.europa.eu/climate-change/causes-climate-change_de#kampf-gegen-den-klimawandel" class="btn btn-warning">Hier gehts zum Artikel</a>
+                </div>
+            </div>
+
+
+            <!-- Abschnitt: spenden-->
+            <div class="card">
+                <div class="card-body" id="spende">
+                    <h1 class="card-title">Spenden und helfen!</h1>
+                    <p class="card-text">Aber nicht nur die Reduktion von CO2, Methan und co. hilft bei der Eindämmung der Erderwärmung.
+                    Auch das langfristige Binden von CO2 und somit die Entnahme aus der Atmosphäre spielt dabei mit eine entscheidende Rolle.
+                    Das Stichwort lautet hier: "Negative Emissionen", wie etwa durch das Pflanzen von Bäumen, welche Kohlendioxid benötigen und dieses über ihren ganzen Lebenszyklus an sich binden.
+                    Die Aufforstung von Wäldern hat also einen bedeutenden Effekt zur Erreichung einer negativen Emission und somit zum Eindämmung der Erderwärmung. </p>
+                    <a href="https://www.br.de/nachrichten/wissen/co2-entnahme-aus-der-atmosphaere-wie-das-kuenftig-gehen-soll,TUVxkID" class="btn btn-warning">Hier gehts zum Artikel</a>
+                </div>
+        
+                <div id="spendenBoxen">  
+                
+                    <div class="card">
+                        <img src="/img/spende_greenpeace_16-9.PNG" class="card-img-top" id="imgPeace">
+                        <div class="card-body">
+                        <h5 class="card-title">Helfen Sie mit Ihrer Spende die Wälder der Erde zu schützen</h5>
+                        <p class="card-text">Alle 2 Sekunden verlieren wir Wald in der Größe eines Fußballfeldes. 
+                            Diese weltweite Zerstörung beschleunigt die Klimakrise und das Artensterben. 
+                            In Finnland und Schweden werden Bäume für Papier abgeholzt und in Deutschland sind gerade einmal 2,8% der Wälder streng geschützt. 
+                            Lassen Sie uns gemeinsam etwas für den Schutz der Wälder tun: Unterstützen Sie Greenpeace jetzt mit einer Spende! (© Michael Kunkel / Greenpeace) </p>
+                        <a href="https://www.greenpeace.de/spenden/waldschutz" 
+                            class="btn btn-warning">Jetzt spenden!<br>(Greenpeace)</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/img/spende_welthungerhilfe_2_16-9.PNG" class="card-img-top" id="imgBaumPflanzen">
+                        <div class="card-body">
+                            <h5 class="card-title">Baumsetzlinge zur Aufforstung</h5>
+                            <p class="card-text">Bäume binden CO2 und helfen dabei, die Auswirkungen des Klimawandels auf lokale Ökosysteme abzufedern.</p>
+                            <a href="https://www.welthungerhilfe.de/spenden/spendenshop/baumsetzlinge/" 
+                                class="btn btn-warning">Jetzt spenden!<br>(Welthungerhilfe)</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/img/spende_regenwald_16-9.PNG" class="card-img-top" id="imgRegenwald">
+                        <div class="card-body">
+                            <h5 class="card-title">Regenwald schützen - Ihre Spende wirkt</h5>
+                            <p class="card-text">Mit Ihrer Spende unterstützen Sie konkrete Projekte zum Schutz des Regenwaldes. 
+                            Damit leisten Sie einen wichtigen Beitrag zum Arten- und Klimaschutz, helfen den Menschen vor Ort und sichern die langfristige Projektarbeit von OroVerde. 
+                            Vielen Dank! </p>
+                            <a href="https://www.regenwald-schuetzen.org/spenden-helfen/jetzt-spenden?regenwald-schuetzen-danke/spende" class="btn btn-warning">Jetzt spenden!<br>(Oroverde)</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Abschnitt: karusselSpenden-->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/spende_greenpeace_16-9.PNG" class="d-block w-100" id="imgPeace">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Helfen Sie die Wälder zu schützen</h5>
+                                <p>Alle 2 Sekunden verlieren wir Wald in der Größe eines Fußballfeldes. 
+                                Diese weltweite Zerstörung beschleunigt die Klimakrise und das Artensterben.</p>
+                                <a href="https://www.greenpeace.de/spenden/waldschutz" class="btn btn-warning">Jetzt spenden!<br>(Greenpeace)</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/spende_welthungerhilfe_2_16-9.PNG" class="d-block w-100" id="imgBaumPflanzen">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Baumsetzlinge zur Aufforstung</h5>
+                                <p>Bäume binden CO2 und helfen dabei, die Auswirkungen des Klimawandels auf lokale Ökosysteme abzufedern.</p>
+                                <a href="https://www.welthungerhilfe.de/spenden/spendenshop/baumsetzlinge/" 
+                                class="btn btn-warning">Jetzt spenden!<br>(Welthungerhilfe)</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/spende_regenwald_16-9.PNG" class="d-block w-100" id="imgRegenwald">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Regenwald schützen - Ihre Spende wirkt</h5>
+                                <p>Mit Ihrer Spende unterstützen Sie konkrete Projekte zum Schutz des Regenwaldes. 
+                                Damit leisten Sie einen wichtigen Beitrag zum Arten- und Klimaschutz.</p>
+                                <a href="https://www.regenwald-schuetzen.org/spenden-helfen/jetzt-spenden?regenwald-schuetzen-danke/spende" class="btn btn-warning">Jetzt spenden!<br>(Oroverde)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+    </main>
+    
+
+    <footer>
+        <nav>
+            <ul>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </ul>
+        </nav>
+    </footer>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    </body>
+</html>
+      

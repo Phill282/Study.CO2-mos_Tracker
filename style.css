@@ -1,0 +1,171 @@
+body {
+  background-color: rgb(172, 173, 105) !important;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+}
+
+header {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  margin: 16px;
+  background-color: white;
+  padding: 16px;
+}
+
+main nav {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  margin: 16px;
+  background-color: white;
+}
+
+.verzeichnisItem {
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+}
+
+.card {
+  text-align: center;
+  margin: 16px;
+  padding: 16px;
+}
+
+#search-input {
+  border-radius: 6px;
+  width: 20em;
+  text-align: center;
+}
+
+footer {
+  height: auto;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: white;
+  margin: 16px;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 16px;
+  margin: 0px;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+a:hover {
+  color: rgb(202, 187, 187);
+}
+
+/* Bilder */
+#imgPeace {
+  filter: brightness(65%);
+}
+
+#imgRegenwald {
+  filter: brightness(75%);
+}
+
+.card-img-top {
+  padding: 5%;
+}
+
+#carouselExampleCaptions {
+  margin: 5%;
+}
+
+/* Recursives Design */
+@media screen and (min-width: 1201px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main nav {
+    width: 30%;
+    padding-top:32px;
+  }
+
+  .verzeichnisItem {
+    display: block;
+    font-size: 20px;
+    margin: 16px;
+  }
+
+  #contentSpeicher {
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #spendenBoxen {
+    display: none;
+  }
+
+  footer nav ul a {
+    font-size: px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  main nav {
+    width: auto;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  #dropDownSchriftkultur {
+    display: none;
+  }
+
+  .verzeichnisItem {
+    font-size: 16px;
+    display: block;
+    margin: 8px;
+  }
+
+  footer nav ul a {
+    font-size: 16px;
+  }
+
+  #carouselExampleCaptions {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 799px) {
+  body {
+    margin-right: 16px !important;
+    margin-left: 16px !important;
+  }
+
+  main nav {
+    width: auto;
+    text-align: center;
+    padding: 8px;
+  }
+
+  #dropDownSchriftkultur {
+    display: none;
+  }
+
+  .verzeichnisItem {
+    font-size: 16px;
+    display: block;
+    margin: 8px;
+  }
+
+  footer nav ul a {
+    font-size: 16px;
+  }
+
+  #carouselExampleCaptions {
+    display: none;
+  }
+}
